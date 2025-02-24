@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Renfe Cercanías Madrid</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Variables CSS */
+    :root {
+      --white: #ffffff;
+      --gray-100: #f4f4f4;
+      --gray-600: #666666;
+      --primary: #007bff;
+    }
+
+    /* About Us Section */
+    .about-us {
+      padding: 0;
+    }
+
+    .about-us-content {
+      padding: 4rem 0;
+      text-align: center;
+    }
+
+    .about-us-content h2 {
+      font-size: 2rem;
+      font-weight: bold;
+      margin-bottom: 1.5rem;
+    }
+
+    .about-us-content p {
+      max-width: 800px;
+      margin: 0 auto 1.5rem;
+      color: var(--gray-600);
+    }
+
+    .bg-white {
+      background-color: var(--white);
+    }
+
+    .bg-gray {
+      background-color: var(--gray-100);
+    }
+
+    /* Our Services Section */
+    .our-services {
+      padding: 4rem 0;
+      background-color: var(--white);
+    }
+
+    .our-services h2 {
+      text-align: center;
+      font-size: 2rem;
+      font-weight: bold;
+      margin-bottom: 2rem;
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+    }
+
+    .service-card {
+      background-color: var(--white);
+      padding: 2rem;
+      border-radius: 0.5rem;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    .service-icon {
+      width: 3rem;
+      height: 3rem;
+      margin: 0 auto 1rem;
+      color: var(--primary);
+    }
+
+    .service-card h3 {
+      font-size: 1.25rem;
+      font-weight: bold;
+      margin-bottom: 0.75rem;
+    }
+
+    .service-card p {
+      color: var(--gray-600);
+    }
+
+    @media (max-width: 768px) {
+      .services-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="navbar-brand">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="navbar-icon">
+          <path d="M4 15.5l8-8l8 8"/>
+          <path d="M4 8.5l8-8l8 8"/>
+        </svg>
+        <span>Renfe Cercanías Madrid</span>
+      </div>
+      <div class="navbar-menu">
+        <a href="/" class="navbar-item">Inicio</a>
+        <a href="/about.html" class="navbar-item">Sobre Nosotros</a>
+        <a href="/tickets.html" class="navbar-item">Bonos</a>
+        <a href="/schedules.html" class="navbar-item">Horarios</a>
+      </div>
+      <button class="navbar-burger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-overlay"></div>
+    <div class="container">
+      <div class="hero-content">
+        <h1>Tu viaje comienza aquí</h1>
+        <p>Descubre la forma más sostenible y eficiente de moverte por Madrid con Renfe Cercanías</p>
+        <a href="/tickets.html" class="button button-primary">
+          Comprar Bonos
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M5 12h14"/>
+            <path d="m12 5 7 7-7 7"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="features">
+    <div class="container">
+      <h2>¿Por qué elegir Renfe Cercanías Madrid?</h2>
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"/>
+              <path d="M12 6v6l4 2"/>
+            </svg>
+          </div>
+          <h3>Puntualidad</h3>
+          <p>Horarios frecuentes y puntuales para que llegues a tiempo a tu destino</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 2v20"/>
+              <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+            </svg>
+          </div>
+          <h3>Economía</h3>
+          <p>Tarifas competitivas y bonos adaptados a tus necesidades</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/>
+              <path d="M12 3a6 6 0 0 1-9 9 9 9 0 1 0 9-9Z"/>
+            </svg>
+          </div>
+          <h3>Sostenibilidad</h3>
+          <p>Comprometidos con el medio ambiente y la movilidad sostenible</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Us Section -->
+  <section class="about-us">
+    <div class="about-us-content bg-white">
+      <div class="container">
+        <h2>Sobre Nosotros</h2>
+        <p>
+          Renfe Cercanías Madrid es una de las redes de transporte ferroviario más importantes de España, 
+          conectando la Comunidad de Madrid con eficiencia, seguridad y comodidad. Desde nuestra fundación, 
+          nos hemos comprometido a ofrecer un servicio de calidad que satisface las necesidades de movilidad 
+          de miles de viajeros diarios.
+        </p>
+      </div>
+    </div>
+    <div class="about-us-content bg-gray">
+      <div class="container">
+        <p>
+          Nuestra misión es facilitar el transporte público de manera sostenible, reduciendo el impacto ambiental 
+          y promoviendo el uso del tren como una alternativa ecológica y eficiente. Con una flota moderna y 
+          un equipo dedicado, garantizamos una experiencia de viaje excepcional.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Our Services Section -->
+  <section class="our-services">
+    <div class="container">
+      <h2>Nuestros Servicios</h2>
+      <div class="services-grid">
+        <!-- Servicio 1 -->
+        <div class="service-card">
+          <div class="service-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 2v20"/>
+              <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+            </svg>
+          </div>
+          <h3>Bonos de Transporte</h3>
+          <p>
+            Ofrecemos bonos diarios, semanales y mensuales adaptados a tus necesidades de viaje, 
+            con descuentos exclusivos para viajeros frecuentes.
+          </p>
+        </div>
+
+        <!-- Servicio 2 -->
+        <div class="service-card">
+          <div class="service-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"/>
+              <path d="M12 6v6l4 2"/>
+            </svg>
+          </div>
+          <h3>Horarios Frecuentes</h3>
+          <p>
+            Contamos con horarios frecuentes y puntuales para que puedas planificar tu día con total 
+            confianza y comodidad.
+          </p>
+        </div>
+
+        <!-- Servicio 3 -->
+        <div class="service-card">
+          <div class="service-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/>
+              <path d="M12 3a6 6 0 0 1-9 9 9 9 0 1 0 9-9Z"/>
+            </svg>
+          </div>
+          <h3>Movilidad Sostenible</h3>
+          <p>
+            Promovemos el uso del transporte público como una alternativa ecológica, contribuyendo 
+            a la reducción de emisiones y al cuidado del medio ambiente.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta">
+    <div class="container">
+      <h2>¿Listo para empezar tu viaje?</h2>
+      <p>Únete a los miles de viajeros que confían en Renfe Cercanías Madrid para sus desplazamientos diarios</p>
+      <div class="cta-buttons">
+        <a href="/tickets.html" class="button button-primary">Ver Bonos Disponibles</a>
+        <a href="/schedules.html" class="button button-outline">Consultar Horarios</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-section">
+          <h3>Renfe Cercanías Madrid</h3>
+          <p>Tu medio de transporte sostenible y eficiente en la Comunidad de Madrid.</p>
+        </div>
+        <div class="footer-section">
+          <h3>Enlaces Rápidos</h3>
+          <ul>
+            <li><a href="/about.html">Sobre Nosotros</a></li>
+            <li><a href="/tickets.html">Comprar Bonos</a></li>
+            <li><a href="/schedules.html">Horarios</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Contacto</h3>
+          <ul class="contact-list">
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+              </svg>
+              912 320 320
+            </li>
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect width="20" height="16" x="2" y="4" rx="2"/>
+                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+              </svg>
+              info@renfe.es
+            </li>
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/>
+                <circle cx="12" cy="10" r="3"/>
+              </svg>
+              Madrid, España
+            </li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Síguenos</h3>
+          <div class="social-links">
+            <a href="https://facebook.com" class="social-link">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+              </svg>
+            </a>
+            <a href="https://twitter.com" class="social-link">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/>
+              </svg>
+            </a>
+            <a href="https://instagram.com" class="social-link">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0>
+                <rect width="20" height="20" x="2" y="2" rx="5" ry="5"/>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  
+    <script>
+      // Simple mobile menu toggle
+      document.querySelector('.navbar-burger').addEventListener('click', function() {
+        document.querySelector('.navbar-menu').classList.toggle('is-active');
+        this.classList.toggle('is-active');
+      });
+    </script>
+  </body>
+  </html>

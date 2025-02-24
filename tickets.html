@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bonos - Renfe Cercanías Madrid</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    
+    .benefits-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 2rem;
+      text-align: center;
+    }
+
+    .benefit-icon {
+      width: 3rem;
+      height: 3rem;
+      color: var(--primary);
+      margin: 0 auto 1rem;
+    }
+
+    .tickets-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+    }
+
+    .ticket-card {
+      background-color: var(--white);
+      border-radius: 0.5rem;
+      overflow: hidden;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s;
+    }
+
+    .ticket-card:hover {
+      transform: translateY(-4px);
+    }
+
+    .ticket-card.popular {
+      position: relative;
+    }
+
+    .popular-badge {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      background-color: var(--primary);
+      color: var(--white);
+      padding: 0.25rem 0.75rem;
+      border-radius: 9999px;
+      font-size: 0.875rem;
+      font-weight: 500;
+    }
+
+    .ticket-content {
+      padding: 2rem;
+    }
+
+    .ticket-price {
+      font-size: 2.5rem;
+      font-weight: bold;
+      color: var(--primary);
+      margin-bottom: 1.5rem;
+    }
+
+    .feature-list {
+      list-style: none;
+      margin-bottom: 2rem;
+    }
+
+    .feature-list li {
+      display: flex;
+      align-items: center;
+      margin-bottom: 0.75rem;
+      color: var(--gray-600);
+    }
+
+    .feature-dot {
+      width: 0.5rem;
+      height: 0.5rem;
+      background-color: var(--primary);
+      border-radius: 9999px;
+      margin-right: 0.75rem;
+    }
+
+    @media (max-width: 768px) {
+      .benefits-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .tickets-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .benefits-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+    
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="navbar-brand">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="navbar-icon">
+          <path d="M4 15.5l8-8l8 8"/>
+          <path d="M4 8.5l8-8l8 8"/>
+        </svg>
+        <span>Renfe Cercanías Madrid</span>
+      </div>
+      <div class="navbar-menu">
+        <a href="/" class="navbar-item">Inicio</a>
+        <a href="/about.html" class="navbar-item">Sobre Nosotros</a>
+        <a href="/tickets.html" class="navbar-item">Bonos</a>
+        <a href="/schedules.html" class="navbar-item">Horarios</a>
+      </div>
+      <button class="navbar-burger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section style="background-color: var(--primary); padding: 4rem 0; color: var(--white);">
+    <div class="container">
+      <div style="text-align: center;">
+        <h1 style="font-size: 2.5rem; font-weight: bold; margin-bottom: 1.5rem;">Bonos de Transporte</h1>
+        <p style="font-size: 1.25rem; max-width: 32rem; margin: 0 auto;">
+          Encuentra el bono que mejor se adapte a tus necesidades de viaje
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Benefits Section -->
+    <section style="padding: 4rem 0;">
+        <div class="container">
+          <h2 style="text-align: center; font-size: 2rem; font-weight: bold; margin-bottom: 2rem;">
+            Beneficios de Nuestros Bonos
+          </h2>
+          <div class="benefits-grid">
+            <!-- Beneficio 1 -->
+            <div class="benefit">
+              <div class="benefit-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                  <circle cx="12" cy="7" r="4"/>
+                </svg>
+              </div>
+              <h3 style="font-size: 1.25rem; font-weight: bold; margin-bottom: 0.5rem;">Ahorro Económico</h3>
+              <p style="color: var(--gray-600);">Disfruta de tarifas reducidas con nuestros bonos mensuales y semanales.</p>
+            </div>
+    
+            <!-- Beneficio 2 -->
+            <div class="benefit">
+              <div class="benefit-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                </svg>
+              </div>
+              <h3 style="font-size: 1.25rem; font-weight: bold; margin-bottom: 0.5rem;">Flexibilidad</h3>
+              <p style="color: var(--gray-600);">Elige entre bonos diarios, semanales o mensuales según tus necesidades.</p>
+            </div>
+    
+            <!-- Beneficio 3 -->
+            <div class="benefit">
+              <div class="benefit-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                  <circle cx="12" cy="7" r="4"/>
+                </svg>
+              </div>
+              <h3 style="font-size: 1.25rem; font-weight: bold; margin-bottom: 0.5rem;">Acceso Rápido</h3>
+              <p style="color: var(--gray-600);">Recarga tu bono de forma rápida y sencilla desde nuestra plataforma.</p>
+            </div>
+    
+            <!-- Beneficio 4 -->
+            <div class="benefit">
+              <div class="benefit-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                  <polyline points="22 4 12 14.01 9 11.01"/>
+                </svg>
+              </div>
+              <h3 style="font-size: 1.25rem; font-weight: bold; margin-bottom: 0.5rem;">Seguridad</h3>
+              <p style="color: var(--gray-600);">Tus datos y transacciones están protegidos con los más altos estándares de seguridad.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    
+      <!-- Tickets Section -->
+      <section style="padding: 4rem 0; background-color: var(--gray-100);">
+        <div class="container">
+          <h2 style="text-align: center; font-size: 2rem; font-weight: bold; margin-bottom: 2rem;">
+            Nuestros Bonos Disponibles
+          </h2>
+          <div class="tickets-grid">
+            <!-- Bono Diario -->
+            <div class="ticket-card">
+              <div class="ticket-content">
+                <h3 style="font-size: 1.5rem; font-weight: bold; margin-bottom: 1rem;">Bono Diario</h3>
+                <div class="ticket-price">3€</div>
+                <ul class="feature-list">
+                  <li>
+                    <span class="feature-dot"></span>
+                    Válido por 24 horas
+                  </li>
+                  <li>
+                    <span class="feature-dot"></span>
+                    Uso ilimitado en el día
+                  </li>
+                  <li>
+                    <span class="feature-dot"></span>
+                    Ideal para viajes puntuales
+                  </li>
+                </ul>
+                <button style="width: 100%; padding: 0.75rem; background-color: var(--primary); color: var(--white); border: none; border-radius: 0.5rem; cursor: pointer;">
+                  Comprar Ahora
+                </button>
+              </div>
+            </div>
+    
+            <!-- Bono Semanal -->
+            <div class="ticket-card popular">
+              <div class="popular-badge">Más Popular</div>
+              <div class="ticket-content">
+                <h3 style="font-size: 1.5rem; font-weight: bold; margin-bottom: 1rem;">Bono Semanal</h3>
+                <div class="ticket-price">10€</div>
+                <ul class="feature-list">
+                  <li>
+                    <span class="feature-dot"></span>
+                    Válido por 7 días
+                  </li>
+                  <li>
+                    <span class="feature-dot"></span>
+                    Ahorro del 20% frente al bono diario
+                  </li>
+                  <li>
+                    <span class="feature-dot"></span>
+                    Ideal para viajes frecuentes
+                  </li>
+                </ul>
+                <button style="width: 100%; padding: 0.75rem; background-color: var(--primary); color: var(--white); border: none; border-radius: 0.5rem; cursor: pointer;">
+                  Comprar Ahora
+                </button>
+              </div>
+            </div>
+    
+            <!-- Bono Mensual -->
+            <div class="ticket-card">
+              <div class="ticket-content">
+                <h3 style="font-size: 1.5rem; font-weight: bold; margin-bottom: 1rem;">Bono Mensual</h3>
+                <div class="ticket-price">30€</div>
+                <ul class="feature-list">
+                  <li>
+                    <span class="feature-dot"></span>
+                    Válido por 30 días
+                  </li>
+                  <li>
+                    <span class="feature-dot"></span>
+                    Ahorro del 30% frente al bono diario
+                  </li>
+                  <li>
+                    <span class="feature-dot"></span>
+                    Ideal para viajeros habituales
+                  </li>
+                </ul>
+                <button style="width: 100%; padding: 0.75rem; background-color: var(--primary); color: var(--white); border: none; border-radius: 0.5rem; cursor: pointer;">
+                  Comprar Ahora
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    
+      <!-- Footer -->
+      <footer style="background-color: var(--gray-800); color: var(--white); padding: 2rem 0;">
+        <div class="container">
+          <div style="text-align: center;">
+            <p style="font-size: 0.875rem;">© 2023 Renfe Cercanías Madrid. Todos los derechos reservados.</p>
+          </div>
+        </div>
+      </footer>
+    </body>
+    </html>
