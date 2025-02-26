@@ -1,4 +1,28 @@
-/* Reset and base styles */
+
+/*Boton de login*/
+.login-register-btn {
+  background-color: #ff5722; /* Color naranja llamativo */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 25px; 
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-left: auto; 
+}
+
+.login-register-btn:hover {
+  background-color: #e64a19; 
+}
+
+.navbar-menu {
+  display: flex;
+  align-items: center;
+}
+
+/*fin*/
+
 :root {
     --primary: #2E3192;
     --primary-dark: #1E2161;
