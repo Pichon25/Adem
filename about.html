@@ -5,112 +5,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Renfe Cercanías Madrid</title>
   <link rel="stylesheet" href="style.css">
-  <style>
-    /* Variables CSS */
-    :root {
-      --white: #ffffff;
-      --gray-100: #f4f4f4;
-      --gray-600: #666666;
-      --primary: #007bff;
-    }
-
-    /* About Us Section */
-    .about-us {
-      padding: 0;
-    }
-
-    .about-us-content {
-      padding: 4rem 0;
-      text-align: center;
-    }
-
-    .about-us-content h2 {
-      font-size: 2rem;
-      font-weight: bold;
-      margin-bottom: 1.5rem;
-    }
-
-    .about-us-content p {
-      max-width: 800px;
-      margin: 0 auto 1.5rem;
-      color: var(--gray-600);
-    }
-
-    .bg-white {
-      background-color: var(--white);
-    }
-
-    .bg-gray {
-      background-color: var(--gray-100);
-    }
-
-    /* Our Services Section */
-    .our-services {
-      padding: 4rem 0;
-      background-color: var(--white);
-    }
-
-    .our-services h2 {
-      text-align: center;
-      font-size: 2rem;
-      font-weight: bold;
-      margin-bottom: 2rem;
-    }
-
-    .services-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 2rem;
-    }
-
-    .service-card {
-      background-color: var(--white);
-      padding: 2rem;
-      border-radius: 0.5rem;
-      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-      text-align: center;
-    }
-
-    .service-icon {
-      width: 3rem;
-      height: 3rem;
-      margin: 0 auto 1rem;
-      color: var(--primary);
-    }
-
-    .service-card h3 {
-      font-size: 1.25rem;
-      font-weight: bold;
-      margin-bottom: 0.75rem;
-    }
-
-    .service-card p {
-      color: var(--gray-600);
-    }
-
-    @media (max-width: 768px) {
-      .services-grid {
-        grid-template-columns: 1fr;
-      }
-    }
-  </style>
 </head>
 <body>
   <!-- Navbar -->
   <nav class="navbar">
     <div class="container">
       <div class="navbar-brand">
-        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="navbar-icon">
+        <img src="logo.png" alt="Renfe Cercanías Madrid Logo" width="30%"       class="navbar-logo">
           <path d="M4 15.5l8-8l8 8"/>
           <path d="M4 8.5l8-8l8 8"/>
-        </svg>
-        <span>Renfe Cercanías Madrid</span>
       </div>
       <div class="navbar-menu">
         <a href="/" class="navbar-item">Inicio</a>
         <a href="/about.html" class="navbar-item">Sobre Nosotros</a>
         <a href="/tickets.html" class="navbar-item">Bonos</a>
         <a href="/schedules.html" class="navbar-item">Horarios</a>
+        <button class="login-register-btn">Login/Register</button>
       </div>
       <button class="navbar-burger">
         <span></span>
@@ -121,22 +31,22 @@
   </nav>
 
   <!-- Hero Section -->
-  <section class="hero">
-    <div class="hero-overlay"></div>
-    <div class="container">
-      <div class="hero-content">
-        <h1>Tu viaje comienza aquí</h1>
-        <p>Descubre la forma más sostenible y eficiente de moverte por Madrid con Renfe Cercanías</p>
-        <a href="/tickets.html" class="button button-primary">
-          Comprar Bonos
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M5 12h14"/>
-            <path d="m12 5 7 7-7 7"/>
-          </svg>
-        </a>
+    <section class="hero">
+      <div class="hero-overlay"></div>
+      <div class="container">
+        <div class="hero-content">
+          <h1>Tu viaje comienza aquí</h1>
+          <p>on una flota moderna y un equipo comprometido, trabajamos cada día para hacer que tu viaje sea más cómodo y agradable. ¡Únete a nosotros y descubre una forma inteligente de moverte por Madrid!</p>
+          <a href="/tickets.html" class="button button-primary">
+            Comprar Bonos
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M5 12h14"/>
+              <path d="m12 5 7 7-7 7"/>
+            </svg>
+          </a>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
   <!-- Features Section -->
   <section class="features">
