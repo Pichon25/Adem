@@ -35,12 +35,14 @@
   margin-bottom: 1rem;
   line-height: 1.2;
   color: var(--white);
+  align-items: center;
 }
 
 .hero-content p {
   font-size: 1.5rem; /* Tamaño del párrafo */
   margin-bottom: 2rem;
   color: var(--white);
+  align-items: center;
 }
 
 .button-primary {
@@ -547,190 +549,220 @@ body {
   }
 }
 
+/*bonos*/
+    /* Estilos generales */
+    :root {
+      --primary: #2E3192;
+      --primary-dark: #1E2161;
+      --white: #ffffff;
+      --gray-100: #f3f4f6;
+      --gray-200: #e5e7eb;
+      --gray-600: #4b5563;
+      --gray-800: #1f2937;
+      --color-accent: #FFA500;
+    }
 
-/*bonos*/ 
-/* Estilos generales */
-:root {
-  --primary: #2E3192;
-  --primary-dark: #1E2161;
-  --white: #ffffff;
-  --gray-100: #f3f4f6;
-  --gray-200: #e5e7eb;
-  --gray-600: #4b5563;
-  --gray-800: #1f2937;
-  --color-accent: #FFA500;
-}
+    body {
+      font-family: Arial, sans-serif;
+      color: var(--gray-800);
+      background-color: var(--white);
+    }
 
-body {
-  font-family: Arial, sans-serif;
-  color: var(--gray-800);
-  background-color: var(--white);
-}
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 1rem;
+    }
 
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 1rem;
-}
+    /* Hero Section */
+    .hero-bonos {
+        background-color: var(--primary);
+        color: var(--white);
+        padding: 4rem 0;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 40vh; /* Ajustar la altura para centrar */
+      }
 
-/* Hero Section */
-.hero-bonos {
-  background-color: var(--primary);
-  color: var(--white);
-  padding: 4rem 0;
-  text-align: center;
-}
+    .hero-bonos h1 {
+      font-size: 2.5rem;
+      font-weight: bold;
+      margin-bottom: 1rem;
+    }
 
-.hero-bonos h1 {
-  font-size: 2.5rem;
-  font-weight: bold;
-  margin-bottom: 1rem;
-}
+    .hero-bonos p {
+      font-size: 1.25rem;
+      max-width: 600px;
+      margin: 0 auto;
+    }
 
-.hero-bonos p {
-  font-size: 1.25rem;
-  max-width: 600px;
-  margin: 0 auto;
-}
+    .hero-content {
+      text-align: center;
+    }
+    /* Benefits Section */
+    .benefits-section {
+      padding: 4rem 0;
+      background-color: var(--white);
+    }
 
-/* Benefits Section */
-.benefits-section {
-  padding: 4rem 0;
-  background-color: var(--white);
-}
+    .benefits-section h2 {
+      text-align: center;
+      font-size: 2rem;
+      font-weight: bold;
+      margin-bottom: 2rem;
+    }
 
-.benefits-section h2 {
-  text-align: center;
-  font-size: 2rem;
-  font-weight: bold;
-  margin-bottom: 2rem;
-}
+    .benefits-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+    }
 
-.benefits-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 2rem;
-}
+    .benefit-card {
+      text-align: center;
+      padding: 1.5rem;
+      background-color: var(--gray-100);
+      border-radius: 0.5rem;
+      transition: transform 0.2s;
+    }
 
-.benefit-card {
-  text-align: center;
-  padding: 1.5rem;
-  background-color: var(--gray-100);
-  border-radius: 0.5rem;
-  transition: transform 0.2s;
-}
+    .benefit-card:hover {
+      transform: translateY(-5px);
+    }
 
-.benefit-card:hover {
-  transform: translateY(-5px);
-}
+    .benefit-icon {
+      width: 48px;
+      height: 48px;
+      margin: 0 auto 1rem;
+      color: var(--primary);
+    }
 
-.benefit-icon {
-  width: 48px;
-  height: 48px;
-  margin: 0 auto 1rem;
-  color: var(--primary);
-}
+    .benefit-card h3 {
+      font-size: 1.25rem;
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+    }
 
-.benefit-card h3 {
-  font-size: 1.25rem;
-  font-weight: bold;
-  margin-bottom: 0.5rem;
-}
+    .benefit-card p {
+      color: var(--gray-600);
+    }
 
-.benefit-card p {
-  color: var(--gray-600);
-}
+    /* Tickets Section */
+    .tickets-section {
+      padding: 4rem 0;
+      background-color: var(--gray-100);
+    }
 
-/* Tickets Section */
-.tickets-section {
-  padding: 4rem 0;
-  background-color: var(--gray-100);
-}
+    .tickets-section h2 {
+      text-align: center;
+      font-size: 2rem;
+      font-weight: bold;
+      margin-bottom: 2rem;
+    }
 
-.tickets-section h2 {
-  text-align: center;
-  font-size: 2rem;
-  font-weight: bold;
-  margin-bottom: 2rem;
-}
+    .tickets-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+    }
 
-.tickets-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
-}
+    .ticket-card {
+      background-color: var(--white);
+      border-radius: 0.5rem;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      transition: transform 0.2s;
+    }
 
-.ticket-card {
-  background-color: var(--white);
-  border-radius: 0.5rem;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-  transition: transform 0.2s;
-}
+    .ticket-card:hover {
+      transform: translateY(-5px);
+    }
 
-.ticket-card:hover {
-  transform: translateY(-5px);
-}
+    .ticket-card.popular {
+      position: relative;
+    }
 
-.ticket-card.popular {
-  position: relative;
-}
+    .popular-badge {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      background-color: var(--color-accent);
+      color: var(--white);
+      padding: 0.5rem 1rem;
+      border-radius: 9999px;
+      font-size: 0.875rem;
+      font-weight: bold;
+    }
 
-.popular-badge {
-  position: absolute;
-  top: 1rem;
-  right: 1rem;
-  background-color: var(--color-accent);
-  color: var(--white);
-  padding: 0.5rem 1rem;
-  border-radius: 9999px;
-  font-size: 0.875rem;
-  font-weight: bold;
-}
+    .ticket-content {
+      padding: 2rem;
+      text-align: center;
+    }
 
-.ticket-content {
-  padding: 2rem;
-  text-align: center;
-}
+    .ticket-content h3 {
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin-bottom: 1rem;
+    }
 
-.ticket-content h3 {
-  font-size: 1.5rem;
-  font-weight: bold;
-  margin-bottom: 1rem;
-}
+    .ticket-price {
+      font-size: 2rem;
+      font-weight: bold;
+      color: var(--primary);
+      margin-bottom: 1.5rem;
+    }
 
-.ticket-price {
-  font-size: 2rem;
-  font-weight: bold;
-  color: var(--primary);
-  margin-bottom: 1.5rem;
-}
+    .feature-list {
+      list-style: none;
+      margin-bottom: 2rem;
+    }
 
-.feature-list {
-  list-style: none;
-  margin-bottom: 2rem;
-}
+    .feature-list li {
+      margin-bottom: 0.75rem;
+      color: var(--gray-600);
+    }
 
-.feature-list li {
-  margin-bottom: 0.75rem;
-  color: var(--gray-600);
-}
+    .button-primary {
+      background-color: var(--primary);
+      color: var(--white);
+      padding: 0.75rem 1.5rem;
+      border: none;
+      border-radius: 0.5rem;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background-color 0.2s;
+      width: 100%;
+    }
 
-.button-primary {
-  background-color: var(--primary);
-  color: var(--white);
-  padding: 0.75rem 1.5rem;
-  border: none;
-  border-radius: 0.5rem;
-  font-size: 1rem;
-  cursor: pointer;
-  transition: background-color 0.2s;
-  width: 100%;
-}
+    .button-primary:hover {
+      background-color: var(--primary-dark);
+    }
 
-.button-primary:hover {
-  background-color: var(--primary-dark);
-}
+    /* Footer */
+    .footer {
+      background-color: var(--gray-800);
+      color: var(--white);
+      padding: 2rem 0;
+      text-align: center;
+    }
+
+    .footer p {
+      font-size: 0.875rem;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .benefits-grid, .tickets-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+
+
+
+
 
 /* Footer */
 .footer {
